@@ -1,6 +1,24 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
+    String text = "  Java Programming Language  ";
+
+    System.out.println("1. Length: " + text.length());
+    System.out.println("2. Trimmed: [" + text.trim() + "]");
+    System.out.println("3. Uppercase: " + text.toUpperCase());
+    System.out.println("4. Lowercase: " + text.toLowerCase());
+    System.out.println("5. Character at index 5: " + text.charAt(5));
+    System.out.println("6. Substring (5, 16): " + text.substring(5, 16));
+    System.out.println("7. Contains 'Java'? " + text.contains("Java"));
+    System.out.println("8. Starts with 'Java'? " + text.trim().startsWith("Java"));
+    System.out.println("9. Ends with 'Language'? " + text.trim().endsWith("Language"));
+    System.out.println("10. Replace 'Java' with 'C#': " + text.replace("Java", "C#"));
+    System.out.println("11. Index of 'P': " + text.indexOf('P'));
+    String[] words = text.trim().split(" ");
+    System.out.println("12. Split words:");
+    for (String w : words) {
+        System.out.println("   " + w);
+    }
 
 
     //Linear Search
